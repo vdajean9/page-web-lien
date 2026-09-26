@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liens & Contact</title>
+    <!-- Importation d'une police moderne (Inter) et des icônes FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Arrière-plan aux ton naturels / écologiques */
+            background-color: #121814;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        /* Style de l'avatar / photo de profil */
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #2d3748;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+
+        p.bio {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+
+        /* Liste des liens (boutons) */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1a241e;
+            color: #f3f4f6;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid #27352c;
+            transition: all 0.2s ease;
+        }
+
+        .link-btn:hover {
+            background-color: #243329;
+            border-color: #3b5241;
+            transform: translateY(-2px);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .link-btn i.fa-brands, 
+        .link-btn i.fa-solid {
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+            color: #6ee7b7; /* Toute subtile de vert nature */
+        }
+
+        .link-btn .fa-arrow-right {
+            font-size: 0.8rem;
+            color: #6b7280;
+            transition: transform 0.2s ease;
+        }
+
+        .link-btn:hover .fa-arrow-right {
+            transform: translateX(3px);
+            color: #f3f4f6;
+        }
+
+        /* Pied de page / Copyright */
+        footer {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Remplacez l'image par la vôtre ou supprimez cette ligne -->
+        <img src="votre-photo.jpg" alt="Photo de profil" class="profile-img">
+        
+        <h1>Jean</h1>
+        <p class="bio">Recherche en écologie & Photographie animalière</p>
+
+        <div class="links-list">
+            <!-- Lien Instagram -->
+            <a href="https://www.instagram.com/vdajean9_wildlife" target="_blank" class="link-btn">
+                <div class="link-content">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram (Wildlife)</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- Lien Portfolio / Site web (à adapter) -->
+            <a href="https://votre-site.com" target="_blank" class="link-btn">
+                <div class="link-content">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Mon portfolio</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- Lien ResearchGate / Profil Académique (optionnel) -->
+            <a href="https://www.researchgate.net" target="_blank" class="link-btn">
+                <div class="link-content">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>ResearchGate / Académique</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- Bouton de contact par e-mail -->
+            <a href="mailto:votre.email@exemple.com" class="link-btn">
+                <div class="link-content">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Me contacter par email</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 - Jean</p>
+        </footer>
+    </div>
+
+</body>
+</html>
